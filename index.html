@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theBestAppWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-content">
+
+        <div class="barra">
+            <nav>
+                <div class="contenedor nav">
+                    <div class="controlls">
+                        <div class="control control-1 active-btn" data-id="home">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="control control-2" data-id="about-2">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div class="control control-3" data-id="about-3">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="theme-btn">
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <div class="hamburguer">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    
+
+        <header class="section sec1 header active" id="home">
+            <h4 class="stat-title"></h4>
+            <form action="" class="weather__search">
+                <input type="text" placeholder="Search for a city..." class="weather__searchform">
+                <i id="weatherI" class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            <div class="description">
+                <div class="name">City</div>
+                <div id="country" class="country">IN</div>
+                <div class="time-zone" id="time-zone">America/Ezeiza</div>
+                <div class="date-time-one">date</div>
+            </div>
+            <div class="today" id="current-temp">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="other">
+                    <div class="day">Monday</div>
+                    <div class="temperatura">Night - 25.6&#176; C</div>
+                    <div class="temperatura2">Day - 25.6&#176; C</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section sec2 about-2" id="about-2">
+                  <div class="forecast">
+                       <div class="title">
+                         <h1>Weather forecast</h1>
+                       </div>
+                      <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item one-forecast">
+                            <div class="day"></div>
+                            <img src="https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
+                            <div class="temp"></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="weather-forecast-item two-forecast">
+                            <div class="day"></div>
+                            <img src="https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
+                            <div class="temp"></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="weather-forecast-item three-forecast">
+                            <div class="day"></div>
+                            <img src="https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
+                            <div class="temp"></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="weather-forecast-item four-forecast">
+                            <div class="day"></div>
+                            <img src="https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
+                            <div class="temp"></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="weather-forecast-item five-forecast">
+                            <div class="day"></div>
+                            <img src="https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
+                            <div class="temp"></div>
+                            <div class="temp"></div>
+                        </div>
+                       </div>
+                  </div>  
+            </section>
+
+            <section class="section sec3 about-3" id="about-3">
+                <div class="secThree">
+                    <div class="others" id="current-weather-items"></div>
+                </div>
+            </section>
+            
+        </main>
+
+      
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/0ec49656c0.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
