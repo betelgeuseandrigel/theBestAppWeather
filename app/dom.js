@@ -140,38 +140,38 @@ export class Dom{
         document.querySelector(".one-forecast").innerHTML = `
         <div class="day">${window.moment(info.list[0].dt * 1000).format('HH:mm a')}</div>
         <img src="https://openweathermap.org/img/wn/${info.list[0].weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
-        <div class="temp">Temp - ${Math.round(info.list[0].main.temp)}&#176; C</div>
-        <div class="temp">Fls-like - ${Math.round(info.list[0].main.feels_like)}&#176; C</div>
+        <div class="temp">Temp - ${Math.round(info.list[0].main.temp)}&#176;C</div>
+        <div class="temp">Fls-like - ${Math.round(info.list[0].main.feels_like)}&#176;C</div>
         `;
         document.querySelector(".two-forecast").innerHTML = `
         <div class="day">${window.moment(info.list[1].dt * 1000).format('HH:mm a')}</div>
         <img src="https://openweathermap.org/img/wn/${info.list[1].weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
-        <div class="temp">Temp - ${Math.round(info.list[1].main.temp)}&#176; C</div>
-        <div class="temp">Fls-like - ${Math.round(info.list[1].main.feels_like)}&#176; C</div>
+        <div class="temp">Temp - ${Math.round(info.list[1].main.temp)}&#176;C</div>
+        <div class="temp">Fls-like - ${Math.round(info.list[1].main.feels_like)}&#176;C</div>
         `;
         document.querySelector(".three-forecast").innerHTML = `
         <div class="day">${window.moment(info.list[2].dt * 1000).format('HH:mm a')}</div>
         <img src="https://openweathermap.org/img/wn/${info.list[2].weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
-        <div class="temp">Temp - ${Math.round(info.list[2].main.temp)}&#176; C</div>
-        <div class="temp">Fls-like - ${Math.round(info.list[2].main.feels_like)}&#176; C</div>
+        <div class="temp">Temp - ${Math.round(info.list[2].main.temp)}&#176;C</div>
+        <div class="temp">Fls-like - ${Math.round(info.list[2].main.feels_like)}&#176;C</div>
         `;
         document.querySelector(".four-forecast").innerHTML = `
         <div class="day">${window.moment(info.list[3].dt * 1000).format('HH:mm a')}</div>
         <img src="https://openweathermap.org/img/wn/${info.list[3].weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
-        <div class="temp">Temp - ${Math.round(info.list[3].main.temp)}&#176; C</div>
-        <div class="temp">Fls-like - ${Math.round(info.list[3].main.feels_like)}&#176; C</div>
+        <div class="temp">Temp - ${Math.round(info.list[3].main.temp)}&#176;C</div>
+        <div class="temp">Fls-like - ${Math.round(info.list[3].main.feels_like)}&#176;C</div>
         `;
         document.querySelector(".five-forecast").innerHTML = `
         <div class="day">${window.moment(info.list[4].dt * 1000).format('HH:mm a')}</div>
         <img src="https://openweathermap.org/img/wn/${info.list[4].weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
-        <div class="temp">Temp - ${Math.round(info.list[4].main.temp)}&#176; C</div>
-        <div class="temp">Fls-like - ${Math.round(info.list[4].main.feels_like)}&#176; C</div>
+        <div class="temp">Temp - ${Math.round(info.list[4].main.temp)}&#176;C</div>
+        <div class="temp">Fls-like - ${Math.round(info.list[4].main.feels_like)}&#176;C</div>
         `;
         document.querySelector(".six-forecast").innerHTML = `
         <div class="day">${window.moment(info.list[5].dt * 1000).format('HH:mm a')}</div>
         <img src="https://openweathermap.org/img/wn/${info.list[5].weather[0].icon}@2x.png" alt="weather icon" class="w-icon"> 
-        <div class="temp">Temp - ${Math.round(info.list[5].main.temp)}&#176; C</div>
-        <div class="temp">Fls-like - ${Math.round(info.list[5].main.feels_like)}&#176; C</div>
+        <div class="temp">Temp - ${Math.round(info.list[5].main.temp)}&#176;C</div>
+        <div class="temp">Fls-like - ${Math.round(info.list[5].main.feels_like)}&#176;C</div>
         `;
     }
 }

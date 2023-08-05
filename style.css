@@ -350,19 +350,22 @@ input::placeholder{
   width: 60%;
 }
 
-.title{
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  top: 100px;
-  left: 550px;
-}
+
 
 .weather-forecast{
     display: flex;
     justify-content: space-between;
-    width: 1100px;
+    width: 1200px;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather-forecast .weather-forecast-item{
@@ -373,7 +376,7 @@ input::placeholder{
     margin: 10px auto;
     border: 1px solid #eee;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     color: #eee;
 }
 
@@ -455,9 +458,6 @@ input::placeholder{
     color: white;
     font-size: 13px;
     font-weight: 400;
-    position: absolute;
-    top: 0px;
-    left: 650px;
   }
 }
 
@@ -471,7 +471,8 @@ input::placeholder{
   .nav{  
     display: flex;
     flex-direction: row;  
-    justify-content: center;  
+    justify-content: center; 
+    width: max-content; 
   }
 
   .controlls{
@@ -482,12 +483,9 @@ input::placeholder{
     margin: 0 8px;
   }
 
-
   .forecast .weather-forecast{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-    margin: 2px auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .secThree .weather-item{
@@ -501,7 +499,11 @@ input::placeholder{
   }
 
 @media screen and (max-width: 700px){
-  
+  .title{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -538,7 +540,21 @@ input::placeholder{
   font-weight: 400;
   position: absolute;
   top: 0px;
-  left: 590px;
+  left: 90px;
+}
+
+.secThree .others{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.secThree .weather-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
   
