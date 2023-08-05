@@ -144,7 +144,7 @@ body{
   }
   
   .header{
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
     display: flex;
@@ -156,6 +156,7 @@ body{
   }
   
   .section {
+    min-height: 100vh;
     transform: translateY(-100%) scale(0);
     transition: all 0.4s ease-in-out;
     background: var(--color-background-one);
@@ -267,14 +268,56 @@ input::placeholder{
 }
 
 .description{
-    display: none;
+    display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
 }
 
+.weather__units{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.weather__units span{
+  cursor: pointer;
+  background: #ebfffc;
+  color: #555;
+  font-weight: 700;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+}
+
+.weather__units .weather__unit__celcius{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.weather__units .weather__unit__celcius:active{
+  background-color: #0b8793;
+  transition: ease-in-out 0.1s;
+}
+
+.weather__units .weather__unit__farenheit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.weather__units .weather__unit__farenheit:active{
+  background-color: #0b8793;
+  transition: ease-in-out 0.1s;
+}
+
+
 .today{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 10px;
@@ -299,7 +342,7 @@ input::placeholder{
 }
 
 .forecast{
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -311,12 +354,15 @@ input::placeholder{
   color: white;
   font-size: 20px;
   font-weight: 400;
+  position: absolute;
+  top: 100px;
+  left: 550px;
 }
 
 .weather-forecast{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 1100px;
 }
 
 .weather-forecast .weather-forecast-item{
@@ -344,7 +390,7 @@ input::placeholder{
 }
 
 .secThree{
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -369,8 +415,131 @@ input::placeholder{
   justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  
 
 
+}
+
+@media screen and (max-width: 1432px){
+ 
+  
+}
+
+@media screen and (max-width: 1170px){
+  .section{
+    height: 100%;
+    padding: 30px 2px !important;
+  }
+
+  .nav{  
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;  
+  }
+
+  .controlls{
+    padding: 0 2rem;
+  }
+
+  .nav .controlls .control{
+    margin: 0 8px;
+  }
+
+  .forecast .weather-forecast{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .title{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    top: 0px;
+    left: 650px;
+  }
+}
+
+@media screen and (max-width: 970px){
+
+  .section{
+    height: 100%;
+    padding: 30px 2px !important;
+  }
+
+  .nav{  
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;  
+  }
+
+  .controlls{
+    padding: 0 2rem;
+  }
+
+  .nav .controlls .control{
+    margin: 0 8px;
+  }
 
 
+  .forecast .weather-forecast{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin: 2px auto;
+  }
 
+  .secThree .weather-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  }
+
+@media screen and (max-width: 700px){
+  
+}
+
+@media screen and (max-width: 400px){
+
+  .controlls{
+    padding: 0 1.5rem;
+  }
+
+  .nav .controlls .control{
+    margin: 0 4px;
+  }
+
+  input{
+    width: 320px;
+    height: 50px;
+  }
+
+  #weatherI{
+    position: absolute;
+    left: 10px;
+    top: 92px;
+    font-size: 15px;
+    color: #555;
+}
+
+.today{
+  padding: 2px;
+}
+
+
+.title{
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  left: 590px;
+}
+
+  
+}
