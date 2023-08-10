@@ -19,9 +19,10 @@ export class Weather{
         const responseOne = await fetch(urlOne);
         const data = await responseOne.json();
         let {lat, lon} = data.coord;
-        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=6&appid=${this.apiKey}`
+        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=6&appid=${this.apiKey}&units=${this.units}`
         const response = await fetch(url);
         const info = await response.json();
+        console.log(this.units);
         return info;
     }
 
