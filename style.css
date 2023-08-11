@@ -347,15 +347,13 @@ input::placeholder{
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  width: 60%;
 }
 
 
 
 .weather-forecast{
     display: flex;
-    justify-content: space-between;
-    width: 1200px;
+    flex-direction: column;
 }
 
 .title{
@@ -416,6 +414,10 @@ input::placeholder{
 .secThree .weather-item{
   display: flex;
   justify-content: space-between;
+}
+
+.title-weather-item{
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {

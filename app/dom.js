@@ -123,23 +123,23 @@ export class Dom{
         
             this.currentWeatherEl.innerHTML = `
             <div class="weather-item">
-                <div>Humidity:</div>
+                <div class="title-weather-item">Humidity:</div>
                 <div>${humidity}%</div>
             </div>
             <div class="weather-item">
-                <div>Pressure:</div>
+                <div class="title-weather-item">Pressure:</div>
                 <div>${pressure} hPa</div>
             </div>
             <div class="weather-item">
-                <div>Wind speed:</div>
+                <div class="title-weather-item">Wind speed:</div>
                 <div>${weather.wind.speed} ${this.units === "imperial" ? "mph" : "m/s"}</div>
             </div>
             <div class="weather-item">
-                <div>Sunrise:</div>
+                <div class="title-weather-item">Sunrise:</div>
                 <div>${window.moment(sunrise * 1000).format('HH:mm a')}</div>
             </div>
             <div class="weather-item">
-                <div>Sunset:</div>
+                <div class="title-weather-item">Sunset:</div>
                 <div>${window.moment(sunset * 1000).format('HH:mm a')}</div>
             </div>` 
             
